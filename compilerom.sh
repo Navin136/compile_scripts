@@ -58,6 +58,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 rm -rf $ROM/device/asus/X00TD && git clone https://github.com/navin136/android_device_asus_X00TD -b snow $ROM/device/asus/X00TD && rm -rf $ROM/vendor/asus && git clone https://github.com/navin136/android_vendor_asus_X00TD -b snow $ROM/vendor/asus --depth=1 && rm -rf $ROM/kernel/asus/sdm660 && git clone https://github.com/navin136/android_kernel_asus_X00TD -b snow $ROM/kernel/asus/sdm660 --depth=1
 rm -rf $ROM/hardware/qcom-caf/msm8998/audio && git clone https://github.com/navin136/android_hardware_qcom-caf_audio_msm8998 $ROM/hardware/qcom-caf/msm8998/audio && rm -rf $ROM/hardware/qcom-caf/msm8998/display && git clone https://github.com/navin136/android_hardware_qcom-caf_display_msm8998 $ROM/hardware/qcom-caf/msm8998/display
 git clone https://github.com/Navin136/vendor_evolution_build_target_product_security $ROM/vendor/evolution/build/target/product/security
+git clone https://gitlab.com/varunhardgamer/trb_clang -b 14 prebuilts/clang/host/linux-x86/trb_clang
 sudo mkdir /mnt/ccache
 sudo mount ../.cache /mnt/ccache
 export CCACHE_DIR=/mnt/ccache
@@ -89,6 +90,7 @@ repo init -u https://github.com/SpiceOS/android.git -b 11 --depth=1
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 rm -rf $ROM/device/asus/X00TD && git clone https://github.com/navin136/android_device_asus_X00TD -b spiceos $ROM/device/asus/X00TD && rm -rf $ROM/vendor/asus && git clone https://github.com/navin136/android_vendor_asus_X00TD -b snow $ROM/vendor/asus --depth=1 && rm -rf $ROM/kernel/asus/sdm660 && git clone https://github.com/navin136/android_kernel_asus_X00TD -b snow $ROM/kernel/asus/sdm660 --depth=1
 rm -rf $ROM/hardware/qcom-caf/msm8998/audio && git clone https://github.com/navin136/android_hardware_qcom-caf_audio_msm8998 $ROM/hardware/qcom-caf/msm8998/audio && rm -rf $ROM/hardware/qcom-caf/msm8998/display && git clone https://github.com/navin136/android_hardware_qcom-caf_display_msm8998 $ROM/hardware/qcom-caf/msm8998/display
+git clone https://gitlab.com/varunhardgamer/trb_clang -b 14 prebuilts/clang/host/linux-x86/trb_clang
 sudo mkdir /mnt/ccache
 sudo mount ../.cache /mnt/ccache
 export CCACHE_DIR=/mnt/ccache

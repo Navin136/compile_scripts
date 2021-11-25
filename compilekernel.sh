@@ -4,7 +4,7 @@
 sudo apt install make bison bc libncurses5-dev tmate git python3-pip curl build-essential zip unzip -y
 
 #Working Directory
-WORK_DIR=$(pwd)
+WORK_DIR=~/
 
 # Telegram Chat Id
 ID="-1001509079419"

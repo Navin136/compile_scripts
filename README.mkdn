@@ -2,7 +2,7 @@
 
 1:
 ~~~bash
-wget https://raw.githubusercontent.com/Navin136/myscripts/snow/compilekernel.sh
+wget https://raw.githubusercontent.com/Navin136/myscripts/trbclang/compilekernel.sh
 ~~~
 
 2:
@@ -21,7 +21,7 @@ chmod +x compilekernel.sh && bash compilekernel.sh
 
 1:
 ~~~bash
-wget https://raw.githubusercontent.com/Navin136/myscripts/snow/compilerom.sh
+wget https://raw.githubusercontent.com/Navin136/myscripts/trbclang/compilerom.sh
 ~~~
 
 2:
